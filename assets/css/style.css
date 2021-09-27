@@ -27,11 +27,30 @@ main {
   padding-bottom: 5%;
 }
 
+.hero {
+  background: linear-gradient(0.25turn, #d1ac00, #ebf8e1, #808a9f);
+  transform: skewY(-1deg);
+  transform-origin: top left;
+  border-bottom: 5px solid var(--mustard);
+  height: 25vh;
+}
+
 .header-name {
   font-size: 4em;
-  font-family: "Are You Serious", cursive;
+  font-family: "Bebas Neue", cursive;
   color: var(--darkest);
   opacity: 80%;
+  /* padding: 0; */
+  /* margin: 0; */
+  transform: skewY(-2deg);
+}
+
+.header-subtitle {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  transform: skewY(-2deg);
 }
 
 /* Nav */
@@ -68,15 +87,6 @@ nav li:hover {
 
 nav a#openup {
   display: none;
-}
-
-.hero {
-  background: linear-gradient(0.25turn, #d1ac00, #ebf8e1, #808a9f);
-  transform: skewY(-1deg);
-  transform-origin: top left;
-  border-top: 3px solid black;
-  border-bottom: 5px solid var(--mustard);
-  height: 25vh;
 }
 
 /* Cursor by https://codepen.io/renatorib/pen/gBLDA
@@ -219,8 +229,5 @@ nav a#openup {
 
   #about-me {
     margin-top: 0;
-  }
-
-  .name-logo {
   }
 }
