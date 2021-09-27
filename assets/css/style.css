@@ -19,16 +19,16 @@ body {
 }
 
 main {
-  background-image: url(../images/yellowbgimg-flowersbtm.jpg);
+  /* background-image: url(../images/yellowbgimg-flowersbtm.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   padding-top: 8%;
   padding-bottom: 5%;
 }
 
 .hero {
-  background: linear-gradient(0.25turn, #d1ac00, #ebf8e1, #808a9f);
+  background: linear-gradient(0.39turn, #d1ac00, #ebf8e1, #808a9f);
   transform: skewY(-1deg);
   transform-origin: top left;
   border-bottom: 5px solid var(--mustard);
@@ -40,8 +40,8 @@ main {
   font-family: "Bebas Neue", cursive;
   color: var(--darkest);
   opacity: 80%;
-  /* padding: 0; */
-  /* margin: 0; */
+  padding: 0;
+  margin: 0;
   transform: skewY(-2deg);
 }
 
@@ -60,7 +60,6 @@ nav {
   width: 100%;
   background-color: #333;
   color: #eee;
-  /* margin-bottom: 85px; */
 }
 nav ul {
   padding: 0;
@@ -68,13 +67,13 @@ nav ul {
 }
 nav li {
   display: inline;
-  text-align: center;
+  /* text-align: center; */
   font-size: 15px;
 }
 nav a {
   display: inline-block;
   width: 100px;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
   padding: 20px 0;
   color: #eee;
@@ -114,6 +113,16 @@ nav a#openup {
 #projects {
   background-color: #9b9b99;
 }
+
+.large-card {
+  background-color: #fafaef;
+  border: 3px double black;
+}
+
+.card-header,
+.card-footer {
+  background: linear-gradient(0.9turn, #d1ac00, #ebf8e1, #808a9f);
+}
 .card {
   height: auto;
 }
@@ -122,12 +131,11 @@ nav a#openup {
 }
 
 .contact-title {
-  font-size: 20px;
-  border-right: 1px solid black;
+  font-size: 23px;
 }
 
 #contact {
-  height: 10vh;
+  height: auto;
   background-color: var(--mustard);
 }
 
@@ -139,10 +147,18 @@ nav a#openup {
   font-weight: bold;
   text-decoration: none;
   color: black;
+  opacity: 80%;
 }
 
-.card-btn {
-  border-radius: 22px;
+.me {
+  height: 100%;
+  width: 40%;
+  border-radius: 50%;
+}
+
+.card-btn,
+.contact-info {
+  border-radius: 20%;
   background: linear-gradient(45deg, #cac4a0, #f0e9be);
   color: black;
 }
@@ -150,6 +166,7 @@ nav a#openup {
 .card-btn:hover {
   color: black;
   opacity: 80%;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1200px) {
@@ -229,5 +246,9 @@ nav a#openup {
 
   #about-me {
     margin-top: 0;
+  }
+
+  .me {
+    width: 50%;
   }
 }
