@@ -32,7 +32,9 @@ main {
   transform: skewY(-1deg);
   transform-origin: top left;
   border-bottom: 5px solid var(--mustard);
-  height: 25vh;
+  height: 30vh;
+  margin-bottom: 1%;
+  justify-content: space-evenly;
 }
 
 .header-name {
@@ -250,5 +252,15 @@ nav a#openup {
 
   .me {
     width: 50%;
+  }
+
+  .contact-container {
+    flex-flow: wrap;
+    margin: 5%;
+  }
+
+  .contact-info {
+    margin: 5%;
+    padding: 5%;
   }
 }
