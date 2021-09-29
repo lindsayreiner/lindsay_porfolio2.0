@@ -171,6 +171,12 @@ nav a#openup {
   font-weight: bold;
 }
 
+.contact-container {
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 60rem;
+}
+
 @media screen and (max-width: 1200px) {
   .card-btn {
     margin: 5px;
@@ -252,15 +258,5 @@ nav a#openup {
 
   .me {
     width: 50%;
-  }
-
-  .contact-container {
-    flex-flow: wrap;
-    margin: 5%;
-  }
-
-  .contact-info {
-    margin: 5%;
-    padding: 5%;
   }
 }
